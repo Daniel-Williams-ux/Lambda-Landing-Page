@@ -1,3 +1,3 @@
 # Lambda-Landing-Page
 
-### Live view https://daniel-williams-ux.github.io/Lambda-Landing-Page/
+### Live view https://landing-page.danielwilliam23.repl.co/
