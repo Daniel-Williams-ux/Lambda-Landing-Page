@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en"> <!-- Added the lang attribute for language -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>landing page</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta name="description" content="Your concise summary of page content here"> <!-- Added a meta description -->
+  <title>Landing Page</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
     <div class ="intro">
       <h1>This page is about AWS Lambda</h1>
       <p>AWS Lambda is an event-driven, serverless compute service that lets you run code without provisioning or managing servers.</p>
-      <button class="btn">Sign up</button>
+      <button class="btn" id="signupButton">Sign up</button>
     </div>
 
        <img src="../images/lambda.jpg" alt="cloud logo" class="lambda-logo">
@@ -58,8 +58,26 @@
       <h2>Call to action! It's time!</h2>
     <p>Sign up to learn more by clicking the button right over there!.</p>
     </div>
-    <button class="btn-btn">Sign up</button>
+    <button class="btn" id="signupButton">Sign up</button>
   </div>
+
+  <!-- Modal container for the signup form -->
+<div id="signupModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeSignupModal()">&times;</span>
+    <h2>Sign Up</h2>
+    <form id="signupFormContent" onsubmit="handleSignup(event)">
+      <!-- Add your form fields here -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+  </div>
+</div>
 
    <footer class="footer">
     <p>&copy; 2023 Your Website. All rights reserved.</p>
